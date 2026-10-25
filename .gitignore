@@ -1,0 +1,35 @@
+
+# Dependencies
+node_modules/
+Backend/node_modules/
+frontend/node_modules/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+Backend/.env
+frontend/.env
+
+# Local SQLite database and backups
+Backend/data/
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+
+# Build output
+frontend/dist/
+dist/
+
+# Logs
+npm-debug.log*
+*.log
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+*.sqlite-journal
+*.db-journal

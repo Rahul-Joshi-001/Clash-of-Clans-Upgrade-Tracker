@@ -1,0 +1,29 @@
+{
+  "name": "clashtrack-backend",
+  "version": "1.0.0",
+  "description": "Local SQLite backend for ClashTrack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "clash-of-clans",
+    "tracker",
+    "sqlite"
+  ],
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.2.0",
+    "clash-of-clans-data": "^0.19.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

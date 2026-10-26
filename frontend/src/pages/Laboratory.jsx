@@ -12,8 +12,8 @@ import {
   Sparkles,
   Shield,
 } from 'lucide-react'
+import { BACKEND_URL as API_ORIGIN } from '../services/api'
 
-const API_ORIGIN = 'http://localhost:3000'
 
 const SUBCATEGORIES = [
   {

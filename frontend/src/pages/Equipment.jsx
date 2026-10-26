@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { ArrowLeft, Castle, Wrench, Search, CheckCircle2 } from 'lucide-react'
+import { BACKEND_URL as API_ORIGIN } from '../services/api'
 
-const API_ORIGIN = 'http://localhost:3000'
 
 const ORE_TYPES = [
   {

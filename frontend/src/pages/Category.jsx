@@ -17,7 +17,7 @@ import {
   LoaderCircle,
   RefreshCw,
 } from 'lucide-react'
-import API from '../services/api'
+import API, { getImageUrl } from '../services/api'
 
 const CATEGORIES = [
   {
@@ -302,7 +302,7 @@ const Category = () => {
       {/* Full-page attacking Barbarian background */}
       <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
         <img
-          src="http://localhost:3000/images/raged.jpg"
+          src={getImageUrl('/images/raged.jpg')}
           alt=""
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover object-center opacity-25"
@@ -502,7 +502,7 @@ const Category = () => {
                   {/* Category artwork */}
                   <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden rounded-[inherit]">
                     <img
-                      src={`http://localhost:3000${category.image}`}
+                      src={getImageUrl(category.image)}
                       alt=""
                       aria-hidden="true"
                       loading="lazy"
@@ -521,7 +521,7 @@ const Category = () => {
                       <div className="flex items-center gap-3">
                         <div className="flex h-12 w-12 shrink-0 items-center justify-center">
                           <img
-                            src={`http://localhost:3000${category.image}`}
+                            src={getImageUrl(category.image)}
                             alt={category.name}
                             loading="lazy"
                             className="h-12 w-12 object-contain opacity-100"

@@ -8,8 +8,8 @@ import {
   Coins,
   CheckCircle2,
 } from "lucide-react";
+import { BACKEND_URL as API_ORIGIN } from "../services/api";
 
-const API_ORIGIN = "http://localhost:3000";
 
 const getCurrentLevel = (item) =>
   Number(item?.currentLevel ?? item?.current_level ?? item?.level ?? 0);
